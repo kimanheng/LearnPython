@@ -18,5 +18,6 @@ for res in range(1, num_dish+1):
     print("Cost For Dish " + res_num + " | " + dishes[res-1] + " :", pc + ", Tax: " + tx + ", Service: " + sr)
 print("Subtotal Per Person: ", (sum(price) + (sum(price)*(tax+service)/100))/num_pep)
 print("Total Cost: ", sum(price) + (sum(price)*(tax+service)/100))
-print("===========Thank you for visiting \"Happy Restaurant\"==========")
-print("========================Come again soon!=========================")
+print("==================================================================")
+print("Thank you for visiting \"Happy Restaurant\"")
+print("Come again soon!")
