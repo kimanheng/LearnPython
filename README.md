@@ -1,5 +1,5 @@
 # LearnPython
-ICT Activity Grade 10: Python For Beginner  
+ICT Activity Grade 10: Python For Beginner    
 Feel Free To Use My Code
 
 ## Disclaimer
