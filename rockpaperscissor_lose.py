@@ -1,7 +1,6 @@
 goodbye = False
 objects = ["Rock", "Paper", "Scissor"]
 point = 0
-again = ""
 
 print("Welcome to Rock Paper Scissor")
 while not goodbye:
@@ -23,7 +22,8 @@ while not goodbye:
     print("You lose!")
     point -= 1
     print("Your current point is", point)
-
+    
+    again = ""
     while again != "n" and again != "y":
         again = input("Play again? Y/N: ")
         again = again.lower()
