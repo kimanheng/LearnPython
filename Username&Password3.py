@@ -24,7 +24,6 @@ while not goodbye:
                 print(f"Welcome, {username} ")
                 print(f"Thank you for logging in.")
                 complete = True
-        print("Username and Password Validated is Correct")
-    else:
+    if login_or_signup == "e":
         goodbye = True
         print("The program is ended")
