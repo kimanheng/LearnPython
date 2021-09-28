@@ -10,17 +10,13 @@ while True:
         while True:
             username = input("Enter your username: ")
             password = input("Enter your password: ")
-            if username == user and password == password:
-                continue
-            elif username not in user:
+            if username not in user:
                 print("This is not a valid username or password, try again!")
                 break
-                login_or_signup = input("Login (L) or Signup (S) or End (E): ")
-            elif password != user[username]:
+            if password != user[username]:
                 print("This is not a valid username or password, try again!")
                 break
-                login_or_signup = input("Login (L) or Signup (S) or End (E): ")
-            elif password == user[username]:
+            if password == user[username]:
                 print(f"Welcome, {username} ")
                 print(f"Thank you for logging in.")
                 break
