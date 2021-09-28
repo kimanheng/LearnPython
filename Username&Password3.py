@@ -25,5 +25,5 @@ while True:
                 print(f"Thank you for logging in.")
                 break
     if login_or_signup == "e":
-        break
         print("The program is ended")
+        break
