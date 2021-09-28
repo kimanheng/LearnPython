@@ -1,6 +1,6 @@
 # LearnPython
-ICT Activity Grade 10: Python For Beginner    
-<B> Feel Free To Use My Code </B>
-
-## Disclaimer
-If you don't want to get in trouble at school, at least edit some code to make it a bit different :)
+ICT Grade 10: Python For Beginner  
+<br>
+<b>All the code is written by, Kiman Heng</b>  
+<b>Disclaimer: </b>This is for study purpose only.  
+Feel free to use my code, but you come here to learn.
