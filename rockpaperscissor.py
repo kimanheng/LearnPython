@@ -13,11 +13,11 @@ while not goodbye:
 	bot_choice = random.randint(0,2)
 	print("")
 	
-	print("Your choice is", object[my_choice-1])
-	print("Computer choice is", object[bot_choice])
+	print("Your choice is", objects[my_choice-1])
+	print("Computer choice is", objects[bot_choice])
 	print("")
 	
-	print(object[my_choice-1], "vs", object[bot_choice])
+	print(objects[my_choice-1], "vs", objects[bot_choice])
 	if my_choice == 1 and bot_choice == 1:
 		print("Winner is Computer!")
 		point -= 1
