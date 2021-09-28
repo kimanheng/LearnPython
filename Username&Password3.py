@@ -1,29 +1,29 @@
 user = {}
-complete = False
-goodbye = False
 
-while not goodbye:
-    login_or_signup = input("Signup (S) before Login (L) or End (E): ")
+while True:
+    login_or_signup = input("Login (L) or Signup (S) or End (E): ")
     login_or_signup = login_or_signup.lower()
     complete = False
     if login_or_signup == "s":
         user.update({input("Create new username: "): input("Create new password: ")})
     if login_or_signup == "l":
-        while not complete:
+        while True:
             username = input("Enter your username: ")
             password = input("Enter your password: ")
             if username == user and password == password:
                 continue
             elif username not in user:
                 print("This is not a valid username or password, try again!")
-                continue
+                break
+                login_or_signup = input("Login (L) or Signup (S) or End (E): ")
             elif password != user[username]:
                 print("This is not a valid username or password, try again!")
-                continue
+                break
+                login_or_signup = input("Login (L) or Signup (S) or End (E): ")
             elif password == user[username]:
                 print(f"Welcome, {username} ")
                 print(f"Thank you for logging in.")
-                complete = True
+                break
     if login_or_signup == "e":
-        goodbye = True
+        break
         print("The program is ended")
