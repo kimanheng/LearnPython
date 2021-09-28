@@ -1,6 +1,6 @@
 import random
 goodbye = False
-object = ["Rock", "Paper", "Scissor"]
+objects = ["Rock", "Paper", "Scissor"]
 point = 0
 again = ""
 
