@@ -3,7 +3,7 @@ complete = False
 goodbye = False
 
 while not goodbye:
-    login_or_signup = input("Login (L) or Signup (S) or End (E): ")
+    login_or_signup = input("Signup (S) before Login (L) or End (E): ")
     login_or_signup = login_or_signup.lower()
     complete = False
     if login_or_signup == "s":
