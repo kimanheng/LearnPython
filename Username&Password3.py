@@ -3,7 +3,6 @@ user = {}
 while True:
     login_or_signup = input("Login (L) or Signup (S) or End (E): ")
     login_or_signup = login_or_signup.lower()
-    complete = False
     if login_or_signup == "s":
         user.update({input("Create new username: "): input("Create new password: ")})
     if login_or_signup == "l":
