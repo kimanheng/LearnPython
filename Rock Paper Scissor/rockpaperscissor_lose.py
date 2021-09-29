@@ -5,9 +5,7 @@ point = 0
 print("Welcome to Rock Paper Scissor")
 while not goodbye:
     my_choice = int(input("1. Rock\n2. Paper\n3. Scissor\nPick a number: "))
-
-    print("")
-    print("Your choice is", objects[my_choice-1])
+    print("\nYour choice is", objects[my_choice-1])
     if my_choice == 1:
         print("Computer choice is Paper")
     elif my_choice == 2:
@@ -15,8 +13,7 @@ while not goodbye:
     elif my_choice == 3:
         print("Computer choice is Rock")
 
-    print("")
-    print("You lose!")
+    print("\nYou lose!")
     point -= 1
     print("Your current point is", point)
     
