@@ -2,12 +2,12 @@
 def cipher_encrypt(plain_text, key):
     encrypted = ""
     for c in plain_text:
-        if c.isupper(): 
+        if c.isupper():
             c_index = ord(c) - ord('A')
             c_shifted = (c_index + key) % 26 + ord('A')
             c_new = chr(c_shifted)
             encrypted += c_new
-        elif c.islower(): 
+        elif c.islower():
             c_index = ord(c) - ord('a')
             c_shifted = (c_index + key) % 26 + ord('a')
             c_new = chr(c_shifted)
@@ -18,6 +18,7 @@ def cipher_encrypt(plain_text, key):
         else:
             encrypted += c
     return encrypted
+
 
 # The Decryption Function
 def cipher_decrypt(ciphertext, key):
@@ -40,12 +41,16 @@ def cipher_decrypt(ciphertext, key):
             decrypted += c
     return decrypted
 
-plain_text = "Mate, the adventure ride in Canberra was so much fun, We were so drunk we ended up calling 911!"
-ciphertext = cipher_encrypt(plain_text, 4)
-print("Plain text message:\n", plain_text)
-print("Encrypted ciphertext:\n", ciphertext)
 
-ciphertext = "Sr xli gsyrx sj 7, 6, 5 - Ezirkivw Ewwiqfpi!"
-decrypted_msg = cipher_decrypt(ciphertext, 4)
-print("The cipher text:\n", ciphertext)
-print("The decrypted message is:\n",decrypted_msg)
+choice = int(input("This is Caesar Cipher\n1. Encrypt Message\n2. Decrypt Message\nYour Choice: "))
+if choice == 1:
+    text = input("Plain Text: ")
+    result = cipher_encrypt(text, 5)
+    print("Plain text message:\n", text)
+    print("Encrypted ciphertext:\n", result)
+elif choice == 2:
+    text = input("Cipher Text: ")
+    result = cipher_decrypt(text, 5)
+    print("The cipher text:\n", text)
+    print("The decrypted message is:\n", result)
+
