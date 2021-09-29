@@ -1,7 +1,7 @@
 import math
 choices = ["Cube", "Cuboid", "Cylinder"]
 choice = int(input("Calculate:\n1.Cube\n2.Cuboid\n3.Cylinder\nYour choice:"))
-print("Your choice is ", choices[choice-1])
+print("Your choice is", choices[choice-1])
 if choice == 1 :
     side = int(input("Side: "))
     print("Cube Volume:",side**3,"\nCube Surface Area:", 6*side**2)
