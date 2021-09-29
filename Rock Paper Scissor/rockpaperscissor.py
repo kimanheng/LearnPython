@@ -5,10 +5,7 @@ point = 0
 
 print("Welcome to Rock Paper Scissor")
 while not goodbye:
-	print("1. Rock")
-	print("2. Paper")
-	print("3. Scissor")
-	my_choice = int(input("Pick a number: "))
+	my_choice = int(input("1. Rock\n2. Paper\n3. Scissor\nPick a number: "))
 	bot_choice = random.randint(0,2)
 	print("")
 	
