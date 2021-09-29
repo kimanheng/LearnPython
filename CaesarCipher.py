@@ -41,7 +41,9 @@ def cipher_decrypt(message, key):
 choice = int(input("Caesir Cipher\n1. Encrypt Message\n2. Decrypt Message\nYour Choice: "))
 if choice == 1:
     text = input("\nPlain Text: ")
-    print("Encrypted message:",cipher_encrypt(text, 5))
+    num = int(input("Shifting(Number): "))
+    print("Encrypted message:",cipher_encrypt(text, num))
 elif choice == 2:
     text = input("\nCipher Text: ")
-    print("Decrypted message:", cipher_decrypt(text, 5))
+    num = int(input("Shifting(Number): "))
+    print("Decrypted message:", cipher_decrypt(text, num))
