@@ -32,9 +32,8 @@ while not goodbye:
 		print("Winner is You!")
 		point += 1
 	else: 
-		print("Awww, it's a draw...")	
-	print("")
-	print("Your current point is", point)
+		print("Awww, it's a draw...")
+	print("\nYour current point is", point)
 	
 	again = ""
 	while again != "n" and again != "y":
