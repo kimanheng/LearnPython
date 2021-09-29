@@ -2,14 +2,12 @@
 def cipher_encrypt(plain_text, key):
     encrypted = ""
     for c in plain_text:
-        if c.isupper(): #check if it's an uppercase character
+        if c.isupper(): 
             c_index = ord(c) - ord('A')
-            # shift the current character by key positions
             c_shifted = (c_index + key) % 26 + ord('A')
             c_new = chr(c_shifted)
             encrypted += c_new
-        elif c.islower(): #check if its a lowecase character
-            # subtract the unicode of 'a' to get index in [0-25) range
+        elif c.islower(): 
             c_index = ord(c) - ord('a')
             c_shifted = (c_index + key) % 26 + ord('a')
             c_new = chr(c_shifted)
