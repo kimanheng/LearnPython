@@ -7,9 +7,8 @@ print("Welcome to Rock Paper Scissor")
 while not goodbye:
 	my_choice = int(input("1. Rock\n2. Paper\n3. Scissor\nPick a number: "))
 	bot_choice = random.randint(0,2)
-	print("")
 	
-	print("Your choice is", objects[my_choice-1])
+	print("\nYour choice is", objects[my_choice-1])
 	print("Computer choice is", objects[bot_choice])
 	print("")
 	
